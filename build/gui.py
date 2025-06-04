@@ -31,7 +31,7 @@ class DamageControllerApp:
     def setup_canvas(self):
         self.canvas = tk.Canvas(
             self.master,
-            bg="#2A2F4F",
+            bg="#251A5E",
             height=550,
             width=1000,
             bd=0,
@@ -43,7 +43,7 @@ class DamageControllerApp:
         # Cabeçalho
         self.canvas.create_rectangle(
             0.0, 0.0, 1000.0, 72.0,
-            fill="#E5BEEC",
+            fill="#3C47AF",
             outline=""
         )
         
@@ -51,7 +51,7 @@ class DamageControllerApp:
             85.0, 20.0,
             anchor="nw",
             text="Damage Controller",
-            fill="#000000",
+            fill="#FFFFFF",
             font=("Inter Bold", 30)
         )
         
@@ -66,14 +66,14 @@ class DamageControllerApp:
     def create_section(self, x1, y1, x2, y2, title):
         self.canvas.create_rectangle(
             x1, y1, x2, y2,
-            fill="#917FB3",
+            fill="#FFFFFF",
             outline=""
         )
         self.canvas.create_text(
             x1+17, y1+18,
             anchor="nw",
             text=title,
-            fill="#FFFFFF",
+            fill="#000000",
             font=("Inter Bold", 10)
         )
         
@@ -83,8 +83,8 @@ class DamageControllerApp:
             self.master,
             text="Carregar CSV",
             command=self.carregar_dados,
-            bg="#E5BEEC",
-            fg="#000000",
+            bg="#3C47AF",
+            fg="#FFFFFF",
             font=("Inter", 10),
             borderwidth=0,
             highlightthickness=0,
@@ -97,8 +97,8 @@ class DamageControllerApp:
             self.master,
             text="Exportar Relatório",
             command=self.exportar_dados,
-            bg="#E5BEEC",
-            fg="#000000",
+            bg="#3C47AF",
+            fg="#FFFFFF",
             font=("Inter", 10),
             borderwidth=0,
             highlightthickness=0,
@@ -111,8 +111,8 @@ class DamageControllerApp:
             self.master,
             text="Filtrar Dados",
             command=self.filtrar_dados,
-            bg="#E5BEEC",
-            fg="#000000",
+            bg="#3C47AF",
+            fg="#FFFFFF",
             font=("Inter", 10),
             borderwidth=0,
             highlightthickness=0,
@@ -124,8 +124,8 @@ class DamageControllerApp:
             self.master,
             text="Ajuda",
             command=self.mostrar_ajuda,
-            bg="#E5BEEC",
-            fg="#000000",
+            bg="#3C47AF",
+            fg="#FFFFFF",
             font=("Inter", 10),
             borderwidth=0,
             highlightthickness=0,
